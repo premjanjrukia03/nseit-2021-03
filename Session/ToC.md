@@ -1,0 +1,98 @@
+(C) means covered
+(PC) means partially covered
+
+# ToC
+
+1. Java
+    - Introduction to Programming and Java 
+        - Need of Programming (C)
+        - What is Programming (C)
+        - Software 
+        - Flow Diagrams 
+        - Algorithms (C)
+        - Types of Programming paradigms (C)
+        - What is Java? (C)
+        - Java History (C)
+        - Java features (C)
+        - Where is Java used?(C)
+        - Java Environment Setup(C)
+    - Internals and Data Handling
+        - Memory Management 
+        - Internals (C)
+        - Java Working (C)
+        - First Java Program (C)
+        - REPL JShell (C)
+        - Modifiers (C)
+        - Variables and Datatypes (C)
+        - Datatype Conversions (C)
+        - Operators (C)
+        - Control Statements - loops, conditional and jump statements (C)
+        - Methods (C)
+    - Arrays and Strings
+        - Arrays (C)
+        - Array Declaration (C)
+        - Types of Arrays (C)
+        - Memory Allocation in an Array (C)
+        - Strings and Immutability of Strings (PC)
+        - Memory Allocation in a String (C)
+        - StringBuffer and StringBuilder
+    - Object Oriented Programming
+        - Objects and Classes (C)
+        - Constructor and Constructor Overloading (C)
+        - Static Methods/Classes/Variables (PC)
+        - Inheritance (C)
+        - Polymorphism (C)
+        - Method Overriding (C)
+        - Abstraction 
+        - Encapsulation (C)
+        - Inner Class 
+        - Interfaces(C)
+    - Exception and File Handling
+        - Packages 
+        - Regular Expressions 
+        - Exception Handling (PC)
+        - File I/O 
+        - Streams I/O
+    - Collections
+        - Wrapper classes (C)
+        - Generics 
+        - Collections Framework (C)
+        - List, ListIterator Set, Queue, Vector Interfaces (C)
+        - ArrayList and LinkedList classes (C)
+        - HashSet, TreeSet, EnumSet classes (PC)
+        - HashMap, Hashtable, TreeMap, EnumMap (PC)
+        - Comparable & Comparator Interface (C)
+    - Concurrency and Synchronization
+        - Threads (C)
+        - Concurrency vs Parallel processing (C)
+        - Multi-Threading (C)
+        - Synchronization (PC)
+        - Thread Safe (C)
+        - Locks (C)
+        - BlockingQueue (ArrayBlockingQueue, LinkedBlockingQueue) 
+        - AtomicInteger (PC)
+        - ExecutorFramework (C)
+        - Semaphore (C)
+        - CountdownLatch 
+        - Fork-Join Framework 
+        - CyclicBarrier 
+        - ThreadLocal
+    - XML and JSON
+        - Introduction to XML 
+        - Writing XML files 
+        - DOM Parser - Writing into an XML file and Parsing an XML file 
+        - DTD 
+        - XSD 
+        - SAX Parser 
+        - XSL 
+        - StAX 
+        - Xpath 
+        - DOM4j 
+        - JAXB 
+        - JSON
+    - Streams API
+        - Lambda Expression (C)
+        - Normal Streams (C)
+        - Streams API Vs Collections 
+        - Parallel Streams (C)
+        - Filter, Map, Reduce methods  (C)

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean  id="bike" class="com.nseindia.b2.vehicle.Bike"></bean>
+	<bean  id="car" class="com.nseindia.b2.vehicle.Car">
+		<property name="brand" value="BMW"></property>
+		<property name="highlights">
+			<list>
+				<value>Great Mileage</value>
+				<value>0 to 100 in 5 secs</value>
+			<!-- <value>0 to 100 in 8 secs</value> -->	
+			</list>
+			
+			<!-- figure out how to add values for set and maps -->
+		</property>
+	</bean>
+</beans>
+

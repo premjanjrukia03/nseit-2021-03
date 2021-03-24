@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html xmlns:th="https://www.thymeleaf.org">
+	<head>
+		<title>
+			Welcome to the Index		
+		</title>
+	</head>
+	<body>
+		<h1>
+			Message List
+		</h1>
+		
+		<!-- 
+		<p th:each="m : ${msg}" th:text="${m}"></p>		
+		 -->
+		 
+		 <ol>
+		 	<li th:each="m : ${msg}" th:text="${m}">
+		 	</li>
+		 </ol>
+		 
+	
+		
+	</body>
+</html>

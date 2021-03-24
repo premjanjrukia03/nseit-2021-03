@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Author Management</title>
+</head>
+<body>
+	<nav th:replace="fragments/nav :: nav">
+	</nav>
+
+
+	<h1>Enter Author Details</h1>
+	<form action="/addAuthor.html" method="post">
+        <label for="name">Enter name</label>
+        <input type="text" name="name" id="id">
+
+        <label for="genre"></label><input type="text" name="genre" id="genre">
+
+        <input type="submit" value="Add">
+        <input type="reset" value="Reset">
+	</form>
+</body>
+</html>
