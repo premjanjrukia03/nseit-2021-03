@@ -1,17 +1,21 @@
-<!DOCTYPE html>
-<html lang="en" xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Author Management</title>
-</head>
-<body>
-	<nav th:replace="fragments/nav :: nav">
-	</nav>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Author Management System</title>
+    </head>
 
+    <body>
+        <nav th:replace="fragments/nav.html :: nav"></nav>
+        <h1>Here is a list of all Authors</h1>
 
-	<h1>List of All Authors</h1>
-	
-</body>
+        <ul>
+            <li th:each="author : ${authors}">
+                ID: <span th:text="${author.id}">1</span>, <br />
+                Name: <span th:text="${author.name}">Faiz </span><br />
+                Books:
+                <ul>
+                    <li th:each="book : ${author.books}" th:text="${book}">Oracle</li>
+                </ul>
+            </li>
+        </ul>
+    </body>
 </html>

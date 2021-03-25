@@ -1,0 +1,14 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>SimpleClient</title>
+    </head>
+    <body>
+        <h1>Welcome to SimpleClient</h1>
+
+        <div>
+            <p>Message: <span th:text="${quote.message}"></span></p>
+            <p>Id: <span th:text="${quote.value.id}"></span></p>
+            <p>Quote: <span th:text="${quote.value.quote}"></span></p>
+        </div>
+    </body>
+</html>
