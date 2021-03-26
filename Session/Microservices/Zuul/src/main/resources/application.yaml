@@ -1,0 +1,9 @@
+zuul:
+  routes:    author:
+      path: /authors/**
+#      url: http://localhost:8081
+      service-id: AUTHORS
+    book:
+      path: /books/**
+#      url: http://localhost:8082
+      service-id: BOOKS

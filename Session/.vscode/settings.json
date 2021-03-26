@@ -1,0 +1,8 @@
+{
+    "window.zoomLevel": 3.5,
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": false,
+        "editor.formatOnSave": false
+    }
+}
