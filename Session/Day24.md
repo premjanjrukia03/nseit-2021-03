@@ -67,3 +67,119 @@ After you delete the .m2 folder, right click on every project and update the mav
 ```java
 @SpringBootApplication(exclude = { SecurityAutoConfiguration.class })
 ```
+
+# Initializing the database (Database Seeding)
+
+1. Create a file called data.sql inside resources folder
+2. Insert SQL DML Commands
+3. These sql commands will be executed on the database as soon as your JPA/Hibernate connects to the db.
+
+# Initializing the Application (CommandLineRunner)
+
+- Either use this to initialize the database or data.sql, but not both.
+
+
+```
+
+package com.nseindia.b2.webapp.clirunners;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
+
+import com.nseindia.b2.webapp.entities.Author;
+import com.nseindia.b2.webapp.repositories.Repository;
+
+@Component
+public class Bootstrap implements CommandLineRunner {
+	@Autowired
+	Repository repo;
+	
+	@Override
+	public void run(String... args) throws Exception {
+		Author author = new Author();
+		author.setName("TestNmae");
+		repo.save(author);
+	}
+}
+```
+
+
+# Important Topics
+
+- JUnit5
+- Writing and read from files
+- Transaction in Spring Boot
+- Aspect Oriented Programming
+- JWT and OAuth
+- Circuit Breaker
+- Actuator
+
+
+# Resources
+
+- This guy's example works, but his theory might not be on point. So take his word with a grain of salt.
+- He has used Interceptors to work with JWT, and the code actually works.
+- Normally you use filters in Spring Security. https://www.toptal.com/spring/spring-security-tutorial
+
+- This course will help you with the current training topics:https://www.udemy.com/course/spring-framework-5-beginner-to-guru/
+- This course is for future:https://www.udemy.com/course/spring-boot-microservices-with-spring-cloud-beginner-to-guru/
+
+# Swagger APIs
+
+- Normally we were manually accessing the api and trying to understand the response type.
+- In a professional environment the author of an API will release API documentation
+- Swagger API is one tool to write this documentation
+- You can read this documentation to understand request variables and response variables
+
+
+# Meetups
+
+https://www.meetup.com/
+
+
+Blockchain is immutable ledgers
+
+- NGO
+	- supposed to show how much money they are getting
+	- For privacy reasons they do not show, because the donators might want to be anonymous
+	- This is reason is exploited and there is corruption
+	- In a blockchain based environment, every transaction will be visible from anonymous entities.
+
+- WORM = Write once read many
+- Complex Cryptography
+
+- Smart Contracts
+	- You write legal business documentations as code
+	- When certain conditions are fullfilled, the money is automatically transferred.
+
+- Decentralized Apps(not actually decentralized, the concept is amazing) vs Distributed Apps(This course)
+
+- Software as a Service: Cryptocurrency
+
+- Ownership over software assets
+
+- Trading Cryptocurrency is the only profitable blockchain app
+
+# YouTube Channel
+
+- Please subscribe and like the only video I have
+
+https://www.youtube.com/channel/UCrbnmfoPzbXXLa0k_aiuP5Q
+
+
+# Running spring boot applications
+
+- go the the folder and type in `mvn spring-boot:run`
+- to run this you need to have maven installed on your computer
+- to install maven just type in `scoop install maven`
+
+Running `mvn install package` will create a jar file
+
+The jar file will be present inside the target folder
+
+You can run this jar file on any platform with java installed
+
+`java -jar <filename>`

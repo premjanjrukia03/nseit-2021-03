@@ -16,7 +16,7 @@ import com.fasterxml.jackson.annotation.JsonInclude.Include;
 @Entity
 @JsonInclude(Include.NON_NULL)
 public class Author {
-	@Id
+	@Id 
 	@GeneratedValue
 	private Long id;
 	private String name;
@@ -26,9 +26,6 @@ public class Author {
 	
 	@Transient
 	private Set<String> books;
-	
-	
-	
 	
 	public Author() {
 		this.bookIds = new HashSet<Long>();
@@ -52,7 +49,6 @@ public class Author {
 	public void setBookIds(Set<Long> bookIds) {
 		this.bookIds = bookIds;
 	}
-	
 	
 	
 	public Set<String> getBooks() {
