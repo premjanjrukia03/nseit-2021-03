@@ -1,0 +1,14 @@
+zuul:
+  routes:
+    authors:
+      path: /authors/**
+#      url:  http://localhost:8081/
+      service-id: AUTHORS
+    books:
+      path: /books/**
+#      url:  http://localhost:8082/
+      service-id: BOOKS
+      
+      
+# if on Zuul I get a request for Path http://localhost:8080/authors/something/something2/
+# then it will forward that request to http://localhost:8081/something/something2/

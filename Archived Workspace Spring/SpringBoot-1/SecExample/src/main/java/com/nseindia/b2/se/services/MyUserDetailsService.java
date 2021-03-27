@@ -23,10 +23,13 @@ public class MyUserDetailsService implements UserDetailsService{
 		if (!username.equals("ghost")) {
 			throw new UsernameNotFoundException("User not ghost");		
 		}
+		// Use RestTemplate to query the user service to see if authentication is successful
+	
 		
 		MyUserDetails myUserDetails = new MyUserDetails("ghost","$2a$10$jhuiNCHIQz0dqV3m4HYKdeNDcNcPHO3ioJv03DvkKU7Rja29zaRpi");
 		Set<GrantedAuthority> gaList = new HashSet<GrantedAuthority>();
-		
+	
+		// Store these roles in the Users Service, and retrieve them if the authentication is successful.
 		// YOu have to type ROLL_ before the roll name
 		gaList.add(new SimpleGrantedAuthority("ROLE_ADMIN"));
 		gaList.add(new SimpleGrantedAuthority("ROLE_USER"));
